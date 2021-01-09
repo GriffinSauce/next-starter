@@ -1,24 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Starter
 
-## Getting Started
+This is a slightly-opinionated starter kit to get Next.js projects off the ground quickly.
 
-First, run the development server:
+Get your project started quick with:
 
-```bash
-npm run dev
+- Next.js
+- TypeScript (TODO)
+- Tailwind CSS
+- Prettier formatting
+- ESLint
+- React Testing Library (TODO)
+
+Plus some handy tools:
+
+- `tailwindcss-class-combiner` to pass/override component className (see components/Logo)
+
+## ⚡️ Quick Start
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/GriffinSauce/next-starter)
+
+## 🚀 Getting Started
+
+Run the following command to create a new project with this Starter:
+
+```
+yarn create next-app my-app -e https://github.com/GriffinSauce/next-starter
+
 # or
-yarn dev
+
+npx create-next-app my-app -e https://github.com/GriffinSauce/next-starter
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once the project and dependencies are finished installing, you can navigate to that directory and start up the development server with:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+yarn dev
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# or
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+npm run dev
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) with your browser to see your new project!
+
+## 🛠️ Tooling
+
+Some recommended tools:
+
+- VSCode [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss) to support Tailwind `@apply` statements in .css files
+- VSCode [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) to get suggestions and linting
+- VSCode [HeadWind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) to autosort Tailwind classes
+
+Note: `.vscode/setting.json` is checked in, you probably want to add that to `.gitignore`.
+
+## 📚 Learn More About Next.js
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -26,9 +61,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
