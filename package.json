@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint '**/*.{js,jsx}'"
+    "lint": "eslint '**/*.{js,jsx}'",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@robit-dev/tailwindcss-class-combiner": "^1.0.2",
