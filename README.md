@@ -11,9 +11,10 @@ Get your project started quick with:
 - ESLint
 - React Testing Library (TODO)
 
-Plus some handy tools:
+Plus some handy extra's:
 
-- `tailwindcss-class-combiner` to pass/override component className (see components/Logo)
+- Debug the server and client directly in VSCode
+- Use `tailwindcss-class-combiner` to pass/override component CSS classes (see components/Logo)
 
 ## ⚡️ Quick Start
 
@@ -50,6 +51,7 @@ Some recommended tools:
 - VSCode [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss) to support Tailwind `@apply` statements in .css files
 - VSCode [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) to get suggestions and linting
 - VSCode [HeadWind](https://marketplace.visualstudio.com/items?itemName=heybourn.headwind) to autosort Tailwind classes
+- VSCode [Debugger For Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) to get client or server side debugging in your editor
 
 Note: `.vscode/setting.json` is checked in, you probably want to add that to `.gitignore`.
 

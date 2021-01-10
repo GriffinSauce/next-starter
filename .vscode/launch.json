@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Next: Chrome",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "skipFiles": [
+        "${workspaceFolder}/node_modules/**/*.js",
+        "<node_internals>/**/*.js"
+      ]
+    },
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "Next: Node",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/next/dist/bin/next"
+      // "port": 9229,
+    }
+  ]
+  // The compound debugging config does not work - client gets stuck with an empty page :(
+  // "compounds": [
+  //   {
+  //     "name": "Next: Full",
+  //     "configurations": ["Next: Node", "Next: Chrome"]
+  //   }
+  // ]
+}
