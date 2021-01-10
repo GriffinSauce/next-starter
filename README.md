@@ -15,6 +15,15 @@ Plus some handy extra's:
 
 - Debug the server and client directly in VSCode
 - Use `tailwindcss-class-combiner` to pass/override component CSS classes (see components/Logo)
+- Light/dark theme support
+
+## 💡 Opinions
+
+It might be worth reviewing the opinions/assumptions behind this starter kit:
+
+- Some things are much more easily removed than correctly set up quickly (ie. linting, tests)
+- Tailwind is the **only** way I want to style things
+- TypeScript provides benefits even if you don't write any types
 
 ## ⚡️ Quick Start
 

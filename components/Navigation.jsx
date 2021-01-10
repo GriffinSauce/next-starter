@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
 const links = [
   { href: 'https://github.com/vercel/next.js', label: 'GitHub' },
@@ -17,6 +18,9 @@ const Navigation = () => {
           </Link>
         </li>
         <ul className="flex items-center justify-between space-x-4">
+          <li>
+            <ThemeToggle />
+          </li>
           {links.map(({ href, label }) => (
             <li key={`${href}${label}`}>
               <a
