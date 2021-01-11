@@ -1,11 +1,12 @@
 import Head from 'next/head';
+import { NextPage } from 'next';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
 
 const Link = ({ href, title, subtitle }) => (
   <a
     href={href}
-    className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 dark:border-gray-800 focus:text-blue-600 dark:text-gray-100 dark:hover:text-blue-300 dark:focus:text-blue-300"
+    className="p-6 text-left border w-96 rounded-xl hover:text-blue-600 dark:border-gray-800 focus:text-blue-600 dark:text-gray-100 dark:hover:text-blue-300 dark:focus:text-blue-300"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -14,7 +15,7 @@ const Link = ({ href, title, subtitle }) => (
   </a>
 );
 
-const Home = () => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -44,7 +45,7 @@ const Home = () => {
             </code>
           </p>
 
-          <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
+          <div className="flex flex-col items-center justify-around max-w-4xl my-12 space-y-6 sm:w-full">
             <Link
               href="https://nextjs.org/docs"
               title="Documentation"

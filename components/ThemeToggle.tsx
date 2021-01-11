@@ -1,19 +1,17 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 
-const ThemeToggle = () => {
+const ThemeToggle: React.FC = () => {
   const [isMounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), []);
+  useEffect(() => setMounted(true), []); // theme is never defined on build/server
 
-  if (!isMounted) return null;
-
-  const handleChange = (event) => {
+  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setTheme(event.target.value);
   };
 
+  if (!isMounted) return null;
   return (
     <select
       className="font-semibold border border-gray-100 rounded"

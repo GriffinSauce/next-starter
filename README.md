@@ -24,6 +24,7 @@ It might be worth reviewing the opinions/assumptions behind this starter kit:
 - Some things are much more easily removed than correctly set up quickly (ie. linting, tests)
 - Tailwind is the **only** way I want to style things
 - TypeScript provides benefits even if you don't write any types
+- Linting should be focused on mostly on errors and follow established best practices (hence: no eslint-unicorn)
 - No global store is included because it's often not needed and you should critically choose the right option (ie. maybe not redux)
 
 ## ⚡️ Quick Start

@@ -6,7 +6,7 @@ const links = [
   { href: 'https://nextjs.org/docs', label: 'Docs' },
 ];
 
-const Navigation = () => {
+const Navigation: React.FC = () => {
   return (
     <nav className="p-8">
       <ul className="flex items-center justify-between">
