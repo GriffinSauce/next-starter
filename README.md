@@ -5,7 +5,7 @@ This is a slightly-opinionated starter kit to get Next.js projects off the groun
 Get your project started quick with:
 
 - Next.js
-- TypeScript (TODO)
+- TypeScript
 - Tailwind CSS
 - Prettier formatting
 - ESLint
