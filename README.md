@@ -9,7 +9,7 @@ Get your project started quick with:
 - Tailwind CSS
 - Prettier formatting
 - ESLint
-- React Testing Library (TODO)
+- React Testing Library
 
 Plus some handy extra's:
 

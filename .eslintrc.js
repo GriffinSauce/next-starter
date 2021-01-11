@@ -1,4 +1,3 @@
-/* eslint-env node */
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
@@ -18,7 +17,6 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
-    jest: true,
   },
   settings: {
     react: {
@@ -66,6 +64,10 @@ module.exports = {
       files: ['.eslintrc.js', '*.config.js'],
       parserOptions: { sourceType: 'script' },
       env: { node: true },
+    },
+    {
+      files: ['**/*.test.{ts,tsx}'],
+      env: { jest: true },
     },
   ],
 };

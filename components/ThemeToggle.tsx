@@ -16,6 +16,7 @@ const ThemeToggle: React.FC = () => {
     <select
       className="font-semibold border border-gray-100 rounded"
       value={theme}
+      data-testid="theme-select"
       onChange={handleChange}
     >
       <option value="light">Light Mode</option>
