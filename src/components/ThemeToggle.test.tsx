@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
-import { render, fireEvent } from '../test/test-utils';
+import { render, fireEvent } from 'test/test-utils';
 import ThemeToggle from './ThemeToggle';
 
 const ThemeSpy: React.FC = () => {

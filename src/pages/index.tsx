@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { NextPage } from 'next';
-import Navigation from '../components/Navigation';
-import Logo from '../components/Logo';
+import Navigation from 'components/Navigation';
+import Logo from 'components/Logo';
 
 const Link = ({ href, title, subtitle }) => (
   <a

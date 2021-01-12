@@ -2,7 +2,7 @@ import 'tailwindcss/tailwind.css';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 import { ThemeProvider } from 'next-themes';
-import '../styles/global.css';
+import 'styles/global.css';
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (

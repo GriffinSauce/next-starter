@@ -51,9 +51,9 @@ module.exports = {
   },
   // TODO: doesn't want to play nice with ts parser
   ignorePatterns: ['.eslintrc.js'],
-  // TODO
   overrides: [
     {
+      // TypeScript + JSX
       files: ['**/*.tsx'],
       rules: {
         // https://github.com/yannickcr/eslint-plugin-react/issues/2353
@@ -61,13 +61,23 @@ module.exports = {
       },
     },
     {
+      // Config files
       files: ['.eslintrc.js', '*.config.js'],
-      parserOptions: { sourceType: 'script' },
       env: { node: true },
+      parserOptions: { sourceType: 'script' },
     },
     {
-      files: ['**/*.test.{ts,tsx}'],
+      // Tests
+      files: ['src/test/**', '**/*.test.{ts,tsx}'],
       env: { jest: true },
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true, // ie. allowed
+          },
+        ],
+      },
     },
   ],
 };
