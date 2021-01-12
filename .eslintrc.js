@@ -6,11 +6,12 @@ module.exports = {
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:tailwind/recommended',
+    'plugin:sonarjs/recommended',
     'prettier',
     'prettier/@typescript-eslint',
     'prettier/react',
   ],
-  plugins: ['@typescript-eslint', 'react', 'prettier', 'jsx-a11y'],
+  plugins: ['@typescript-eslint', 'react', 'prettier', 'jsx-a11y', 'sonarjs'],
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: './tsconfig.eslint.json',
