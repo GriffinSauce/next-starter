@@ -1,7 +1,7 @@
 import mergeClasses from '@robit-dev/tailwindcss-class-combiner';
 
 interface LogoProps {
-  className: string; // Pass a height/width
+  className?: string; // Pass a height/width
 }
 
 const Logo: React.FC<LogoProps> = ({ className }) => (

@@ -17,23 +17,25 @@ const Navigation: React.FC = () => {
             </a>
           </Link>
         </li>
-        <ul className="flex items-center justify-between space-x-4">
-          <li>
-            <ThemeToggle />
-          </li>
-          {links.map(({ href, label }) => (
-            <li key={`${href}${label}`}>
-              <a
-                href={href}
-                className="no-underline btn-blue"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {label}
-              </a>
+        <li>
+          <ul className="flex items-center justify-between space-x-4">
+            <li>
+              <ThemeToggle />
             </li>
-          ))}
-        </ul>
+            {links.map(({ href, label }) => (
+              <li key={`${href}${label}`}>
+                <a
+                  href={href}
+                  className="no-underline btn-blue"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
       </ul>
     </nav>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
 import { render, fireEvent } from 'test-utils';
+import { axe } from 'jest-axe';
 import ThemeToggle from './ThemeToggle';
 
 const ThemeSpy: React.FC = () => {
@@ -22,4 +23,11 @@ it('toggles the theme', () => {
   fireEvent.change(select, { target: { value: 'light' } });
 
   expect(spy).toHaveTextContent('light');
+});
+
+it('passes accessibility tests', async () => {
+  const { container } = render(<ThemeToggle />);
+  const results = await axe(container);
+
+  expect(results).toHaveNoViolations();
 });

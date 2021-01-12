@@ -17,6 +17,7 @@ const ThemeToggle: React.FC = () => {
       className="font-semibold border border-gray-100 rounded"
       value={theme}
       data-testid="theme-select"
+      aria-label="App theme"
       onChange={handleChange}
     >
       <option value="light">Light Mode</option>
