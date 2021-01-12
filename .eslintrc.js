@@ -12,6 +12,7 @@ module.exports = {
   ],
   plugins: ['@typescript-eslint', 'react', 'prettier', 'jsx-a11y'],
   parserOptions: {
+    tsconfigRootDir: __dirname,
     project: './tsconfig.eslint.json',
   },
   env: {

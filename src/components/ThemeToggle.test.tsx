@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
-import { render, fireEvent } from 'test/test-utils';
+import { render, fireEvent } from 'test-utils';
 import ThemeToggle from './ThemeToggle';
 
 const ThemeSpy: React.FC = () => {
@@ -8,7 +8,7 @@ const ThemeSpy: React.FC = () => {
   return <span data-testid="theme-spy">{theme}</span>;
 };
 
-it('toggles the theme', async () => {
+it('toggles the theme', () => {
   const { getByTestId } = render(
     <>
       <ThemeToggle />
