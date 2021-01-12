@@ -33,7 +33,7 @@ const Home: NextPage = () => {
               Next.js!
             </a>
             {' + '}
-            <a className="text-blue-600" href="http://tailwindcss.com/">
+            <a className="text-blue-600" href="https://tailwindcss.com/">
               Tailwind CSS 2.0
             </a>
           </h1>
