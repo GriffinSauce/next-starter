@@ -2,14 +2,14 @@ module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   extends: [
+    'airbnb',
     'airbnb-typescript',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:tailwind/recommended',
     'plugin:sonarjs/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
+    'plugin:@next/next/recommended',
   ],
   plugins: ['@typescript-eslint', 'react', 'prettier', 'jsx-a11y', 'sonarjs'],
   parserOptions: {
@@ -45,7 +45,8 @@ module.exports = {
       },
     ],
 
-    // Un-opinionate airbnb a bit
+    // Un-opinionate plugins a bit
+    'react/function-component-definition': 'off',
     'arrow-body-style': 'off',
   },
   globals: {

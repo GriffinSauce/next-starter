@@ -15,7 +15,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  @apply font-display font-bold;
+  @apply font-bold;
 }
 
 h1,
@@ -44,5 +44,5 @@ h6,
 }
 
 .btn-blue {
-  @apply px-4 py-2 font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded;
+  @apply px-4 py-2 font-semibold text-white bg-blue-600 rounded hover:bg-blue-500;
 }
