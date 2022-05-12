@@ -3,7 +3,15 @@ import { NextPage } from 'next';
 import Navigation from 'components/Navigation';
 import Logo from 'components/Logo';
 
-const Link = ({ href, title, subtitle }) => (
+const Link = ({
+  href,
+  title,
+  subtitle,
+}: {
+  href: string;
+  title: string;
+  subtitle: string;
+}) => (
   <a
     href={href}
     className="p-6 text-left border w-96 rounded-xl hover:text-blue-600 dark:border-gray-800 focus:text-blue-600 dark:text-gray-100 dark:hover:text-blue-300 dark:focus:text-blue-300"
