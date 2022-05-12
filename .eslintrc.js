@@ -8,10 +8,15 @@ module.exports = {
     'plugin:tailwind/recommended',
     'plugin:sonarjs/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
-    'prettier/react',
   ],
-  plugins: ['@typescript-eslint', 'react', 'prettier', 'jsx-a11y', 'sonarjs'],
+  plugins: [
+    '@typescript-eslint',
+    'react',
+    'prettier',
+    'jsx-a11y',
+    'sonarjs',
+    'import',
+  ],
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: './tsconfig.eslint.json',
