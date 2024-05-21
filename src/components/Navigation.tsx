@@ -11,10 +11,11 @@ const Navigation: React.FC = () => {
     <nav className="p-8">
       <ul className="flex items-center justify-between">
         <li>
-          <Link href="/">
-            <a className="text-blue-500 no-underline text-accent-1 dark:text-blue-300">
-              Home
-            </a>
+          <Link
+            href="/"
+            className="text-blue-500 no-underline text-accent-1 dark:text-blue-300"
+          >
+            Home
           </Link>
         </li>
         <li>
