@@ -7,10 +7,12 @@ interface ResponseData {
   name: string;
 }
 
-export default (
+const handler = (
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>,
 ): void => {
   res.statusCode = 200;
   res.json({ name: 'John Doe' });
 };
+
+export default handler;
