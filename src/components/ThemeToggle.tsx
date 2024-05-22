@@ -1,9 +1,10 @@
+'use client';
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 
 const ThemeToggle: React.FC = () => {
   const [isMounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => setMounted(true), []); // theme is never defined on build/server
 
@@ -15,7 +16,7 @@ const ThemeToggle: React.FC = () => {
   return (
     <select
       className="font-semibold border border-gray-100 rounded"
-      value={theme}
+      value={resolvedTheme}
       data-testid="theme-select"
       aria-label="App theme"
       onChange={handleChange}

@@ -1,5 +1,3 @@
-import Head from 'next/head';
-import { NextPage } from 'next';
 import Navigation from 'components/Navigation';
 import Logo from 'components/Logo';
 
@@ -23,14 +21,9 @@ const Link = ({
   </a>
 );
 
-const Home: NextPage = () => {
+const Home = () => {
   return (
     <>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <div className="flex flex-col items-stretch justify-center min-h-screen">
         <Navigation />
 
