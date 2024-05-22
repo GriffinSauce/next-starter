@@ -14,7 +14,7 @@ Get your project started quick with:
 Plus some handy extra's:
 
 - Debug the server and client directly in VSCode
-- Use [tailshake](https://github.com/GriffinSauce/tailshake) to merge/override Tailwind CSS classes (see components/Logo)
+- Use [tailwind-merge](https://github.com/dcastil/tailwind-merge) to merge/override Tailwind CSS classes (see components/Logo)
 - Light/dark theme support
 
 ## 💡 Opinions
@@ -25,7 +25,7 @@ It might be worth reviewing the opinions/assumptions behind this starter kit:
 - Tailwind is the **only** way I want to style things
 - TypeScript provides benefits even if you don't write any types, disable strict mode if you please
 - Linting should be focused on mostly on errors + maintainabiity and follow established best practices
-- A global store is not included because it's often not needed and you should critically choose the right option (ie. maybe not redux)
+- A global store is not included because it's often not needed and you should critically choose the right option (ie. probably [not redux](https://github.com/pmndrs/zustand))
 
 ## ⚡️ Quick Start
 
