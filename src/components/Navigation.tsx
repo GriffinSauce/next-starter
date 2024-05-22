@@ -13,7 +13,7 @@ const Navigation: React.FC = () => {
         <li>
           <Link
             href="/"
-            className="text-blue-500 no-underline text-accent-1 dark:text-blue-300"
+            className="text-accent-1 text-blue-500 no-underline dark:text-blue-300"
           >
             Home
           </Link>
@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
               <li key={`${href}${label}`}>
                 <a
                   href={href}
-                  className="no-underline btn-blue"
+                  className="btn-blue no-underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

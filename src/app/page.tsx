@@ -12,7 +12,7 @@ const Link = ({
 }) => (
   <a
     href={href}
-    className="p-6 text-left border w-96 rounded-xl hover:text-blue-600 dark:border-gray-800 focus:text-blue-600 dark:text-gray-100 dark:hover:text-blue-300 dark:focus:text-blue-300"
+    className="w-96 rounded-xl border p-6 text-left hover:text-blue-600 focus:text-blue-600 dark:border-gray-800 dark:text-gray-100 dark:hover:text-blue-300 dark:focus:text-blue-300"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -24,11 +24,11 @@ const Link = ({
 const Home = () => {
   return (
     <>
-      <div className="flex flex-col items-stretch justify-center min-h-screen">
+      <div className="flex min-h-screen flex-col items-stretch justify-center">
         <Navigation />
 
-        <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
-          <h1 className="text-5xl font-bold text-center text-gray-700 dark:text-gray-100">
+        <main className="flex flex-1 flex-col items-center justify-center px-20 text-center">
+          <h1 className="text-center text-5xl font-bold text-gray-700 dark:text-gray-100">
             Welcome to{' '}
             <a className="text-blue-600" href="https://nextjs.org">
               Next.js!
@@ -41,12 +41,12 @@ const Home = () => {
 
           <p className="mt-3 text-2xl dark:text-gray-100">
             Get started by editing{' '}
-            <code className="p-3 font-mono text-lg bg-gray-100 rounded-md dark:text-gray-800">
+            <code className="rounded-md bg-gray-100 p-3 font-mono text-lg dark:text-gray-800">
               pages/index.js
             </code>
           </p>
 
-          <div className="flex flex-col items-center justify-around max-w-4xl my-12 space-y-6 sm:w-full">
+          <div className="my-12 flex max-w-4xl flex-col items-center justify-around space-y-6 sm:w-full">
             <Link
               href="https://nextjs.org/docs"
               title="Documentation"
@@ -72,14 +72,14 @@ const Home = () => {
           </div>
         </main>
 
-        <footer className="flex items-center justify-center w-full h-24 border-t dark:text-gray-100 dark:border-gray-700">
+        <footer className="flex h-24 w-full items-center justify-center border-t dark:border-gray-700 dark:text-gray-100">
           <a
             className="flex items-center justify-center text-white"
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by <Logo className="h-4 ml-2" />
+            Powered by <Logo className="ml-2 h-4" />
           </a>
         </footer>
       </div>

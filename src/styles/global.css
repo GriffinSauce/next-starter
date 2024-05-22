@@ -48,5 +48,5 @@ h6,
 }
 
 .btn-blue {
-  @apply px-4 py-2 font-semibold text-white bg-blue-600 rounded hover:bg-blue-500;
+  @apply rounded bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-500;
 }

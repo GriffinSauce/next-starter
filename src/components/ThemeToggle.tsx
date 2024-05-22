@@ -15,7 +15,7 @@ const ThemeToggle: React.FC = () => {
   if (!isMounted) return null;
   return (
     <select
-      className="font-semibold border border-gray-100 rounded"
+      className="rounded border border-gray-100 font-semibold"
       value={resolvedTheme}
       data-testid="theme-select"
       aria-label="App theme"
